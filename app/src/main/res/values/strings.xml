@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AC-103MES测试</string>
+
+    <string name="txt_app_exception_and_exit">很抱歉,程序出现异常,即将退出</string>
+
+    <string name="txt_route_drive">方案%1$s\n全程%2$s，需要%3$s</string>
+    <string name="txt_take_video">录像</string>
+    <string name="txt_take_photo">拍照</string>
+
+    <string name="txt_start_route">正在规划路径</string>
+    <string name="txt_route_fail">路径规划失败</string>
+</resources>

@@ -1,0 +1,181 @@
+{
+"systemtaskitems": [{
+"taskName": "SystemGuidTask",
+"taskOrder": "1",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "LoggerInitTask",
+"taskOrder": "2",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "NetWorkInitTask",
+"taskOrder": "3",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "1",
+"constructor": "initWithNetWorkConfig:",
+"initparam": "httpconfig",
+"multiparam": "",
+"dependontaskresult": ""
+},
+{
+"taskName": "ChangeStartPageTask",
+"taskOrder": "10",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "LeadingPageTask",
+"taskOrder": "10",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "BuildViewTask",
+"taskOrder": "11",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+}
+,{
+"taskName": "AppStartTask",
+"taskOrder": "4",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "AppLoginTask",
+"taskOrder": "5",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "ShareInitTask",
+"taskOrder": "6",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "MapInitTask",
+"taskOrder": "7",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "ServiceInitTask",
+"taskOrder": "8",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "DBInitTask",
+"taskOrder": "9",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "FetchStarupPageTask",
+"taskOrder": "9",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "FetchLeadingPageTask",
+"taskOrder": "9",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "UploadCrashLogTask",
+"taskOrder": "12",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+},{
+"taskName": "HuanxinInitTask",
+"taskOrder": "13",
+"taskType": "",
+"taskReturnType": "0",
+"taskSynType": "0",
+"needparam": "0",
+"constructor": "init",
+"initparam": "",
+"multiparam": "",
+"dependontaskresult": ""
+}]
+}

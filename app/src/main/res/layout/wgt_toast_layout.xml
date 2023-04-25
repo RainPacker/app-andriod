@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:textSize="16sp"
+    android:background="@drawable/bg_toast"
+    android:gravity="center"
+    android:textColor="#FFFFFFFF"
+    android:orientation="vertical" >
+    
+
+</TextView>

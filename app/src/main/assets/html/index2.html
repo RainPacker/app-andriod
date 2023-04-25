@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE></TITLE>
+    <script type="text/javascript" src="md5.min.js"></script>
+    <script type="text/javascript" src="command.js"></script>
+    <script type="text/javascript" src="Base64.js"></script>
+    <script type="text/javascript" src="native.js"></script>
+    <script type="text/javascript">
+     /*
+      /**
+      *  文本
+]
+    SSDKContentTypeText         = 1,
+    
+
+     *  图片
+     
+    SSDKContentTypeImage        = 2,
+    
+
+     *  网页
+
+    SSDKContentTypeWebPage      = 3,
+    
+
+     *  应用
+   
+    SSDKContentTypeApp          = 4,
+    
+   
+     *  音频
+
+    SSDKContentTypeAudio        = 5,
+    
+
+     *  视频
+
+    SSDKContentTypeVideo        = 6,
+    
+      */
+     
+     function ShareWeixinFriend(){
+         
+    
+         var myna = new Native();
+         
+         var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+                      title:"分享标题",
+             sharecontentType:"2"},"shareType":22};
+         
+         var begin=function(obj){
+             
+             var content = document.getElementById("content");
+             content.innerHTML="该分享开始！";
+         }
+         
+         var runIn=function(obj){
+             
+         }
+         
+         var success= function(obj){
+             
+             var content = document.getElementById("content");
+             content.innerHTML="该分享成功！";
+             
+             
+         }
+         
+         var failed = function(error,obj){
+             
+             var content = document.getElementById("content");
+             content.innerHTML="该分享失败！";
+             
+         }
+         var cancel = function(obj){
+             
+             var content = document.getElementById("content");
+             content.innerHTML+="该分享取消！";
+             
+         }
+         
+         myna.calling("s03","5",param,begin,runIn,success,failed,cancel);
+         
+     }
+    
+    function ShareWeixinNetwork(){
+        
+       
+        var myna = new Native();
+        
+        var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":23};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享成功！";
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            alert("failed");
+            
+        }
+        var cancel =function(obj){
+            
+            
+            
+        }
+        
+        myna.calling("s03","5",param,begin,runIn,success,failed);
+    }
+    
+    function ShareSinaWeibo(){
+        
+        var myna = new Native();
+        
+        var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"2",video:""},"shareType":1};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享成功！";
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        var cancel =function(obj){
+            
+            
+            
+        }
+        
+        myna.calling("s03","5",param,begin,runIn,success,failed);
+    }
+    
+    function ShareTextMessage(){
+        
+        var myna = new Native();
+        var param = {"shareInfo":{text:"xxxxxx",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":19};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="短信分享成功！";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s03","5",param,begin,runIn,success,failed);
+    }
+    function ShareEmail(){
+        
+        var myna = new Native();
+        var param = {"shareInfo":{text:"xxxxxx",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":18};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="邮件分享成功！";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+           
+            
+        }
+        
+        myna.calling("s03","5",param,begin,runIn,success,failed);
+        
+    }
+    //===================================================================================
+    
+    function ActionSheetShareWeixinFriend(){
+        
+        
+        var myna = new Native();
+        
+        var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":22};
+        
+        var begin=function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享开始！";
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享成功！";
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享失败！";
+            
+        }
+        var cancel = function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML+="该分享取消！";
+            
+        }
+        
+        myna.calling("s04","5",param,begin,runIn,success,failed,cancel);
+        
+    }
+    
+    function ActionSheetShareWeixinNetwork(){
+        
+        
+        var myna = new Native();
+        
+        var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":23};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享成功！";
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            alert("failed");
+            
+        }
+        var cancel =function(obj){
+            
+            
+            
+        }
+        
+        myna.calling("s04","5",param,begin,runIn,success,failed);
+    }
+    
+    function ActionSheetShareSinaWeibo(){
+        
+        var myna = new Native();
+        
+        var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":1};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="该分享成功！";
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        var cancel =function(obj){
+            
+            
+            
+        }
+        
+        myna.calling("s04","5",param,begin,runIn,success,failed);
+    }
+    
+    function ActionSheetShareTextMessage(){
+        
+        var myna = new Native();
+        var param = {"shareInfo":{text:"xxxxxx",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":19};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="短信分享成功！";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s04","5",param,begin,runIn,success,failed);
+    }
+    function ActionSheetShareEmail(){
+        
+        var myna = new Native();
+        var param = {"shareInfo":{text:"xxxxxx",
+            title:"分享标题",
+            sharecontentType:"2"},"shareType":18};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="邮件分享成功！";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+       
+            
+        }
+        myna.calling("s04","5",param,begin,runIn,success,failed);
+        
+    }
+    </script>
+</HEAD>
+<body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="scancontent">
+        
+    </div>
+    <input type="button" onclick="ShareWeixinFriend()" value="常规分享微信好友">
+    <input type="button" onclick="ShareWeixinNetwork()" value="常规分享微信朋友圈">
+    <input type="button" onclick="ShareSinaWeibo()" value="常规分享微博">
+    <input type="button" onclick="ShareTextMessage()" value="常规短信">
+    <input type="button" onclick="ShareEmail()" value="常规邮件">
+    <div id="content">
+            
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input type="button" onclick="ActionSheetShareWeixinFriend()" value="activeSheet分享微信好友">
+    <input type="button" onclick="ActionSheetShareWeixinNetwork()" value="activeSheet分享微信朋友圈">
+    <input type="button" onclick="ActionSheetShareSinaWeibo()" value="activeSheet分享微博">
+    <input type="button" onclick="ActionSheetShareTextMessage()" value="activeSheet短信">
+    <input type="button" onclick="ActionSheetShareEmail()" value="activeSheet邮件">
+    <div id="content">
+            
+    </div>
+    <br/>
+    <br/>
+    <br/>
+</body>
+</HTML>

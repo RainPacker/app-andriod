@@ -1,0 +1,2014 @@
+{
+"appinfo": {
+"appid": "",
+"appname": "",
+"version": "",
+"templates": ""
+},
+"items": [
+{
+"el_id": "e01",
+"path_id": "p01",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "false",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "robticket_hl.png",
+"nl_icon": "robticket.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "首页",
+"navinfo": {
+"title": "首页",
+"navtype": "1",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "false",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "true",
+"url": "http://10.204.90.21:8091",
+"param": "",
+"local_url": "",
+"needloadinganimation": "true",
+"style": {
+"bgcolor": "#FFFFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+{
+"el_id": "e21",
+"path_id": "p21",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "false",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "robticket_hl.png",
+"nl_icon": "robticket.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "新页面",
+"navinfo": {
+"title": "新页面",
+"navtype": "2",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "false",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "back.png",
+"nl_icon": "back.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+{
+"el_id": "e22",
+"path_id": "p22",
+"p_path_id": "",
+"templates": "",
+"act": "3",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "跟我聊天",
+"navinfo": {
+"title": "跟我聊天",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "false",
+"url": "",
+"param": "",
+"local_url": "index.html",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"needloadinganimation": "false",
+"v_type": "dnvv001",
+"isremote": "true",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#FFFFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc012",
+"items": [
+]
+},
+{
+"el_id": "e20",
+"path_id": "p20",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "false",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "orderticket_hl.png",
+"nl_icon": "orderticket.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "拍摄视频",
+"navinfo": {
+"title": "拍摄视频",
+"navtype": "2",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "3",
+"sid": "",
+"version": "",
+"showTab": "false",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "我的小伙伴",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "3",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "",
+"navtype": "1",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "true",
+"url": "http://localhost:8080/yuyinfuwu/html/index.html",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "2",
+"sid": "",
+"version": "",
+"showTab": "flase",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "测试上浮",
+"navinfo": {
+"title": "测试上浮",
+"navtype": "2",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "4",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "",
+"navtype": "",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "",
+"isremote": "false",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFF0",
+"bgimg": ""
+}
+},
+"c": "dnvc011",
+"items": [
+]
+},
+{
+"el_id": "e19",
+"path_id": "p19",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "false",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "orderticket_hl.png",
+"nl_icon": "orderticket.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "播放视频",
+"navinfo": {
+"title": "播放视频",
+"navtype": "2",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "false",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "3",
+"sid": "",
+"version": "",
+"showTab": "false",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "我的小伙伴",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "3",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "",
+"navtype": "1",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "true",
+"url": "http://localhost:8080/yuyinfuwu/html/index.html",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "2",
+"sid": "",
+"version": "",
+"showTab": "flase",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "测试上浮",
+"navinfo": {
+"title": "测试上浮",
+"navtype": "2",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "4",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "",
+"navtype": "",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "",
+"isremote": "false",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFF0",
+"bgimg": ""
+}
+},
+"c": "dnvc010",
+"items": [
+]
+}
+]
+},
+{
+"el_id": "e03",
+"path_id": "p03",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "order_hl.png",
+"nl_icon": "order.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "场馆",
+"navinfo": {
+"title": "场馆",
+"navtype": "3",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "false",
+"url": "",
+"param": "",
+"local_url": "index2.html",
+"style": {
+"bgcolor": "#F0E68C",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+},
+{
+"el_id": "e04",
+"path_id": "p04",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "赛活",
+"navinfo": {
+"title": "赛活",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"type": "4",
+"title": "",
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "5",
+"sid": "s01",
+"version": "",
+"showTab": "true",
+"style": {
+"hl_icon": "robticket_hl.png",
+"nl_icon": "robticket.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "首页",
+"navtype": "1",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "4",
+"title": "",
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "false",
+"url": "",
+"param": "",
+"local_url": "index.html",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+},
+{
+"el_id": "e05",
+"path_id": "p05",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "me_hl.png",
+"nl_icon": "me.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "我的",
+"navinfo": {
+"title": "我的",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "2",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "e06",
+"path_id": "p06",
+"p_path_id": "",
+"templates": "",
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "我的签到",
+"navinfo": {
+"title": "我的签到",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+},
+{
+"el_id": "e07",
+"path_id": "p07",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "扫一扫",
+"navinfo": {
+"title": "扫一扫",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+},
+{
+"el_id": "e08",
+"path_id": "p08",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "跟我聊天",
+"navinfo": {
+"title": "跟我聊天",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "2",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "e09",
+"path_id": "p09",
+"p_path_id": "",
+"templates": "",
+"act": "1",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "扫一扫",
+"navinfo": {
+"title": "扫一扫",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "back.png",
+"nl_icon": "back.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+{
+"el_id": "",
+"path_id": "",
+"p_path_id": "",
+"templates": "",
+"act": "4",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "",
+"navinfo": {
+"title": "",
+"navtype": "1",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "",
+"height": ""
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "true",
+"url": "http://localhost:8080/yuyinfuwu/html/index.html",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#F0FFFF",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+},
+"right": {
+"type": "",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "",
+"nl_icon": "",
+"bgcolor": "",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc002",
+"items": [
+]
+},
+{
+"el_id": "e10",
+"path_id": "p10",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "扫一扫1",
+"navinfo": {
+"title": "扫一扫",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+},
+{
+"el_id": "e11",
+"path_id": "p11",
+"p_path_id": "",
+"templates": "",
+"act": "",
+"sid": "",
+"version": "",
+"showTab": "true",
+"notifies": [
+{
+"key": "notify_key_1"
+},
+{
+"key": "notify_key_2"
+}
+],
+"style": {
+"hl_icon": "tmhl.png",
+"nl_icon": "tmnl.png",
+"bgcolor": "",
+"bgimg": ""
+},
+"name": "跟我聊天",
+"navinfo": {
+"title": "跟我聊天",
+"navtype": "4",
+"style": {
+"bgcolor": "#DCDCDC",
+"bgimg": ""
+},
+"isdisplay": "true",
+"left": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+},
+"right": {
+"type": "1",
+"title": "",
+"notifies": [
+],
+"style": {
+"hl_icon": "filterhl.png",
+"nl_icon": "filternl.png",
+"bgcolor": "#FFB6C1",
+"bgimg": ""
+},
+"size": {
+"width": "50",
+"height": "30"
+},
+"items": [
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "false",
+"url": "",
+"param": "",
+"local_url": "index.html",
+"style": {
+"bgcolor": "#EEE8AA",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+}
+},
+"v": {
+"v_type": "dnvv001",
+"isremote": "",
+"url": "",
+"param": "",
+"local_url": "",
+"style": {
+"bgcolor": "#DDA0DD",
+"bgimg": ""
+}
+},
+"c": "dnvc001",
+"items": [
+]
+}
+]
+}

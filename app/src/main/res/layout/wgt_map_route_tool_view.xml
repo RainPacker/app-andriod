@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/map_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_route_type"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="10dp">
+
+        <com.tedu.zhongzhao.widget.IconButton
+            android:id="@+id/map_route_walk_view"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_route_btn"
+            app:icon="@drawable/selector_icon_walk"
+            app:icon_height="21dp"
+            app:icon_width="13dp"
+            app:text="步行"
+            app:textColor="@color/selector_route_type_text"
+            app:textSize="14sp"/>
+
+        <com.tedu.zhongzhao.widget.IconButton
+            android:id="@+id/map_route_ride_view"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_route_btn"
+            app:icon="@drawable/selector_icon_ride"
+            app:icon_height="16dp"
+            app:icon_width="19dp"
+            app:text="骑行"
+            app:textColor="@color/selector_route_type_text"
+            app:textSize="14sp"/>
+
+        <com.tedu.zhongzhao.widget.IconButton
+            android:id="@+id/map_route_drive_view"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_route_btn"
+            android:gravity="center"
+            app:icon="@drawable/selector_icon_drive"
+            app:icon_height="22dp"
+            app:icon_width="27dp"
+            app:text="驾车"
+            app:textColor="@color/selector_route_type_text"
+            app:textSize="14sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/compass_view"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/map_top_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/icon_compass"/>
+
+    <com.tedu.zhongzhao.widget.RouteStrategyView
+        android:id="@+id/drive_strategy_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/compass_view"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/route_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_route_info"
+        android:layout_alignParentBottom="true"/>
+</merge>

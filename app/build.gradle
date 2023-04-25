@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        tasks.whenTaskAdded { task ->
+            if (task.name.contains("lint")) {
+                task.enabled = false
+            }
+        }
+        applicationId "com.tedu.weifu.wms.test"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "my appkey",
+                JPUSH_CHANNEL: "Android_HomeStore",
+                CHANNEL_ID   : "qq",
+                WX_APP_ID    : "wx4868b35061f87885",
+                MAP_KEY      : "f00388d0348249162f1969e467dd1f88"
+        ]
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'x86'
+        }
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file("keystore.jks")
+            storePassword "tsoftware"
+            keyAlias "know-how"
+            keyPassword "tsoftware"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: "com.tedu.knowhow",
+                    JPUSH_APPKEY : "my appkey",
+                    JPUSH_CHANNEL: "Android_HomeStore",
+                    CHANNEL_ID   : "qq",
+                    WX_APP_ID    : "wx4868b35061f87885",
+                    MAP_KEY      : "f00388d0348249162f1969e467dd1f88"
+            ]
+        }
+        debug {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    MobSDK {
+        appKey "28ad146073e34"
+        appSecret "b20083f08663de4e6713ed7f84eeaf7d"
+
+        ShareSDK {
+            //平台配置信息
+            devInfo {
+                Wechat {
+                    appId "wxa39350efcd94bf2f"
+                    appSecret "7e821b3dc57b913c3d4ba947117a2c5c"
+                }
+                WechatMoments {
+                    appId "wxa39350efcd94bf2f"
+                    appSecret "7e821b3dc57b913c3d4ba947117a2c5c"
+                }
+            }
+        }
+
+    }
+
+    greendao {
+        schemaVersion 1//<--数据库的版本，用于升级时候进行更改
+        daoPackage 'com.tedu.zhongzhao.db.gen'
+//这个是生成DAOs、DaoMaster、DaoSession代码保存的包名,默认为entities所在包名
+        targetGenDir 'src/main/java'
+//生成DAOs、DaoMaster、DaoSession的目录。默认为build/generated/source/greendao
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:appcompat-v7:24.2.1'
+            force 'com.android.support:design:24.2.1'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+    compile 'cn.jiguang.sdk:jpush:3.1.1'
+    compile 'cn.jiguang.sdk:jcore:1.1.9'
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile project(':chat')
+    compile project(':AVMP_SkinLibrary')
+    compile project(':zxing')
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.squareup.okio:okio:1.12.0'
+    compile(name: 'QuSdk-RC', ext: 'aar')
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

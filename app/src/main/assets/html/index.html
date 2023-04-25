@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE></TITLE>
+    
+    <script type="text/javascript" src="md5.min.js"></script>
+    
+    <script type="text/javascript" src="command.js"></script>
+    
+    <script type="text/javascript" src="Base64.js"></script>
+    
+    <script type="text/javascript" src="native.js"></script>
+    
+    <script type="text/javascript" src="EventListener.js"></script>
+    
+    
+    <script type="text/javascript">
+        
+        var eventlistener= new EventListener();
+        //压入
+        var count=0;
+        var encrypt_str = "";
+        var decrypt_str = "";
+        var img_path = "";
+        
+        function savelocalStorage(){
+            var myna = new Native();
+            var param = {"key":"mykey","value":"{test:123,test2:123,url:https://segmentfault.com/q/1010000005117352ss}"};
+            var begin=function(){
+                
+                
+            }
+            
+            var runIn=function(obj){
+                
+                
+                
+            }
+            
+            var success= function(obj){
+                
+                
+                
+                var content = document.getElementById("content");
+                content.innerHTML+=obj;
+            }
+            
+            var failed = function(error,obj){
+                
+                
+            }
+            
+            //1 2 3 4
+            myna.calling("s41","5",param,begin,runIn,success,failed);
+            
+            
+        }
+    
+    
+    function getlocalStorage(){
+        var myna = new Native();
+        var param = {"key":"mykey"};
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+            
+            var content = document.getElementById("content");
+            content.innerHTML+=obj;
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s42","5",param,begin,runIn,success,failed);
+        
+        
+    }
+    
+    function clearCertainlocalStorage(){
+        var myna = new Native();
+        var param = {"key":"mykey"};
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content = document.getElementById("content");
+            content.innerHTML="";
+            content.innerHTML+=obj;
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s43","5",param,begin,runIn,success,failed);
+        
+        
+    }
+        
+        
+        function exitHuanxin(){
+            var myna = new Native();
+            var param = null;
+            var begin=function(){
+                
+                
+            }
+            
+            var runIn=function(obj){
+                
+                
+                
+            }
+            
+            var success= function(obj){
+                
+       
+                
+                var content = document.getElementById("content");
+                content.innerHTML+=obj;
+            }
+            
+            var failed = function(error,obj){
+                
+                
+            }
+            
+            //1 2 3 4
+            myna.calling("s40","5",param,begin,runIn,success,failed);
+            
+            
+        }
+        
+        function loginHuanxin(){
+            var myna = new Native();
+            var param = {"username":"80000","pwd":"123456"};
+            var begin=function(){
+                
+                
+            }
+            
+            var runIn=function(obj){
+                
+                
+                
+            }
+            
+            var success= function(obj){
+                
+                var content = document.getElementById("content");
+                content.innerHTML+=obj;
+            }
+            
+            var failed = function(error,obj){
+                
+                
+            }
+            
+            //1 2 3 4
+            myna.calling("s39","5",param,begin,runIn,success,failed);
+            
+            
+        }
+        //无参数返回
+        function push(){
+            var myna = new Native();
+            var param = {"a":"1","b":"2","c":"3"};
+            var begin=function(){
+                
+                
+            }
+            
+            var runIn=function(obj){
+                
+                
+                
+            }
+            
+            var success= function(obj){
+                
+                
+            }
+            
+            var failed = function(error,obj){
+                
+                
+            }
+            
+            //1 2 3 4
+            myna.calling("p11","1",param,begin,runIn,success,failed);
+            
+        }
+    
+    function openNewWebViewWithSpecifiUrl(){
+        
+        var myna = new Native();
+        var param = {"url":"https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_17690753190982067756%22%7D&n_type=0&p_from=1","navshow":"true","navtitle":"测试一下"};
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("p21","1",param,begin,runIn,success,failed);
+        
+        
+    }
+    //弹出
+    //无参数返回
+    function scan(){
+        
+        var myna = new Native();
+        var param = {'a':'1','b':'2'};
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var scancontent = document.getElementById("scancontent");
+            scancontent.innerHTML+="扫描出来的内容是： "+obj;
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+         myna.calling("p09","2",param,begin,runIn,success,failed);
+        
+    }
+    
+    //返回
+    //无返回参数
+    function back(){
+        
+        var myna = new Native();
+        
+        var param = {'a':'1','b':'2'};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        myna.calling("p11","3",param,begin,runIn,success,failed);
+        
+    }
+    
+    //调用服务
+    //根据服务的返回类型而定，样例服务调用
+    function callingService(){
+        
+        var myna = new Native();
+        var param =  {"a":"1","b":"2","c":"3"};
+        
+        var begin=function(obj){
+            var content = document.getElementById("content");
+            content.innerHTML+="当前是开始！！！<br/>";
+        }
+        
+        var runIn=function(obj){
+            var content= document.getElementById("content");
+            content.innerHTML+="当前进度是"+obj+"<br/>"
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+             content.innerHTML+="结束当前调用"+obj+"<br/>"
+        }
+        
+        var failed = function(error,obj){
+            
+            var content= document.getElementById("content");
+            content.innerHTML+="当前调用出现错误"+error+","+obj+"<br/>";
+           
+        }
+        
+        myna.calling("s01","5",param,begin,runIn,success,failed);
+        
+    }
+    //打开其他应用
+    //无返回
+    function openApp(){
+        
+        var myna = new Native();
+        /*
+         app 可以由工程师指定，宜可以由服务器下发。
+         但无论如何都需要更新app源代码并重新发布才能上线，否则无法生效。
+         */
+        
+        var param = {"app":"weixin://wx850b4e1c62307737"};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+="广播已发送！！！！<br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s35","5",param,begin,runIn,success,failed);
+        
+    }
+    
+    
+    //广播消息
+    //无返回
+    function broadCastMessage(){
+        
+        var myna = new Native();
+        var param = {'a':'1','b':'2'};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+          
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+="广播已发送！！！！<br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+          
+            
+        }
+        myna.calling("s02","5",param,begin,runIn,success,failed);
+        
+    }
+    
+    
+    //================================================================================================//
+    
+    
+    //返回boolean值
+    function insertValue(){
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+    
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+="数据已经保存本地 <br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+     
+            var myna = new Native();
+            
+            var key_str = "cf1b9d16fdfaaf51e6d1ce528d5494eef01f"+count;
+            var param = {myvalue:{shareInfo:{text:"xxxxxx1",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+                title:"分享标题",
+                sharecontentType:"3",video:""},shareType:1},key:key_str}
+            
+             myna.calling("s05","5",param,begin,runIn,success,failed);
+            
+            count++;
+       
+    }
+    //返回boolean值
+    function deleteValue(){
+        
+        var myna = new Native();
+        
+        var param = {key:"cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28"};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+="数据已经从本地删除了<br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s07","5",param,begin,runIn,success,failed);
+        
+        
+    }
+    //返回boolean值
+    function updateValue(){
+        
+        var myna = new Native();
+        
+        var param = {myvalue:{shareInfo:{text:"xxxxxx1",images:["http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg","http://f.hiphotos.bdimg.com/album/w%3D2048/sign=df8f1fe50dd79123e0e09374990c5882/cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28.jpg"],url:"http://www.baidu.com",
+            title:"分享标题",
+            sharecontentType:"3",video:""},shareType:1},key:"cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28"};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+="数据已经从本地修改了<br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s06","5",param,begin,runIn,success,failed);
+        
+    }
+    
+    //返回一个json字符串
+    function querySingleValue(){
+        
+        var myna = new Native();
+        
+        var param = {key:"cf1b9d16fdfaaf51e6d1ce528d5494eef01f7a28"};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s08","5",param,begin,runIn,success,failed);
+        
+        
+    }
+    
+    //返回json字符串的数组
+    function queryAllValue(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+            
+        }
+        
+        myna.calling("s09","5",param,begin,runIn,success,failed);
+    }
+    
+    //获得本地定位
+    //国家、省，市，区/县，街道/村镇，门牌号， 坐标信息，海拔
+    function getCurrentLocation(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content1");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content1");
+             content.innerHTML+=obj+"</br>";
+             
+        }
+        
+        myna.calling("s10","5",param,begin,runIn,success,failed);
+    }
+    //返回添加成功/失败
+    function addFriend(){
+        
+        
+        var myna = new Native();
+        
+        var param = {contact:'lizhenjie126',msg:'我想加您为好友！'};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content1");
+            
+            content.innerHTML+=obj+"</br>";
+            
+            eventlistener.addEventListener("friendaccept");
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content1");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s25","5",param,begin,runIn,success,failed);
+        
+    }
+    //返回获取的好友列表，就有一个字段，好友的账号
+    function getFriendList(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content1");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content1");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s26","5",param,begin,runIn,success,failed);
+
+        
+    }
+    //拒绝添加好友
+    function declineAddAsFriend(){
+        var myna = new Native();
+        
+        var param = {contact:'lizhenjie126'};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content2");
+            
+            content.innerHTML+=obj+"</br>";
+            
+       
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content2");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s30","5",param,begin,runIn,success,failed);
+        
+        
+    }
+    //同意添加好友
+    function agreeAddAsFriend(){
+       var myna = new Native();
+        var param = {contact:'lizhenjie126'};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+          
+            var content= document.getElementById("content2");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content12");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s29","5",param,begin,runIn,success,failed);
+        
+    }
+    //调起环信聊天界面
+    function callingIm(){
+        
+        var myna = new Native();
+        
+        var param = {"contact":"lizhenjie126"};
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content1");
+            
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content1");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s24","5",param,begin,runIn,success,failed);
+        
+    }
+    
+    //获取操作系统版本
+    function fetchOsVersion(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="操作系统版本为："+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s11","5",param,begin,runIn,success,failed);
+        
+    }
+   //获取操作系统
+    function fetchOs(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="操作系统为："+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s12","5",param,begin,runIn,success,failed);
+        
+    }
+    //获取设备类型
+    function iphoneType(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="设备为："+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s13","5",param,begin,runIn,success,failed);
+        
+    }
+    //获取运营商
+    function getCarrierName(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="运营商为："+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s14","5",param,begin,runIn,success,failed);
+        
+    }
+    //获取分辨率
+    function getResolution(){
+        
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="分辨率："+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s15","5",param,begin,runIn,success,failed);
+        
+    }
+    //获取所使用的网络类型
+    function getNetType(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="网络类型："+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s16","5",param,begin,runIn,success,failed);
+    }
+    //获取是wifi还是4g
+    function getNetworkType(){
+        
+            var myna = new Native();
+            
+            var param = null;
+            
+            var begin=function(obj){
+                
+            }
+            
+            var runIn=function(obj){
+                
+            }
+            
+            var success= function(obj){
+                
+              
+                var content= document.getElementById("content3");
+                content.innerHTML="";
+                content.innerHTML+="当前网路类型为： "+obj+"</br>";
+                
+            }
+            
+            var failed = function(obj,error){
+                
+                var content = document.getElementById("content3");
+                content.innerHTML+=obj+"</br>";
+                
+            }
+            
+            myna.calling("s17","5",param,begin,runIn,success,failed);
+
+        
+    }
+    //获取设备的guid
+    function deviceGuid(){
+        
+        
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(obj){
+            
+        }
+        
+        var runIn=function(obj){
+            
+        }
+        
+        var success= function(obj){
+            
+            
+            var content= document.getElementById("content3");
+            content.innerHTML="";
+            content.innerHTML+="设备标识为"+obj+"</br>";
+            
+        }
+        
+        var failed = function(obj,error){
+            
+            var content = document.getElementById("content3");
+            content.innerHTML+=obj+"</br>";
+            
+        }
+        
+        myna.calling("s18","5",param,begin,runIn,success,failed);
+        
+        
+    }
+    
+  
+    //调用摄像头进行录像,拍照 返回的是一个路径
+    function CallingCamera(mediatype,capturemode){
+        
+        var myna = new Native();
+        //照相机配置
+        //source 拍摄源 1 代表摄像 2 代表拍照
+        //mediattype: 媒体类型。
+        //capturemode: 捕获模式 0/1 仅限摄像使用。
+        //quality: 质量0-5
+        /*
+         对应ios说明
+         UIImagePickerControllerQualityTypeHigh = 0,       // highest quality
+         UIImagePickerControllerQualityTypeMedium = 1,     // medium quality, suitable for transmission via Wi-Fi
+         UIImagePickerControllerQualityTypeLow = 2,         // lowest quality, suitable for tranmission via cellular network
+         UIImagePickerControllerQualityType640x480 NS_ENUM_AVAILABLE_IOS(4_0) = 3,    // VGA quality
+         UIImagePickerControllerQualityTypeIFrame1280x720 NS_ENUM_AVAILABLE_IOS(5_0) = 4,
+         UIImagePickerControllerQualityTypeIFrame960x540 NS_ENUM_AVAILABLE_IOS(5_0) = 5,
+         
+         对应android说明
+         
+         */
+        
+        var param = {"cameraconfig":{"source":"1","mediatype":mediatype,"capturemode":capturemode,"quality":"0"}};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content4");
+            content.innerHTML="";
+            
+            if(obj.indexOf(".png")!=-1){
+                img_path = obj;
+                content.innerHTML ="<img src='"+obj+"'/>";
+            }
+            if(obj.indexOf(".mp4")!=-1){
+                content.innerHTML ="<video src='"+obj+"' controls='controls'>您的浏览器不支持 video 标签。</video>"
+            }
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s19","5",param,begin,runIn,success,failed);
+
+    
+    }
+    //调用相册，返回的是一个路径
+    function CallingAlbum(){
+        
+        var myna = new Native();
+        
+        var param ={"cameraconfig":{"source":"0","mediatype":[],"capturemode":"","quality":"0"}};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+             img_path = obj;
+             
+            var content= document.getElementById("content4");
+            content.innerHTML="";
+            content.innerHTML ="<img src='"+obj+"'/>"
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s19","5",param,begin,runIn,success,failed);
+    }
+    
+    function MultiPictureSelect(){
+        
+        var myna = new Native();
+        
+        var param ={"count":9};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var contentx= document.getElementById("content4");
+            contentx.innerHTML="";
+            var content = JSON.parse(obj);
+           
+            
+            if(content!=null){
+                
+               for(var i=0;i<content.length;i++){
+                  var content_str = content[i];
+                    
+                    contentx.innerHTML +="<img src='"+content_str+"' height='100' width='100'/><br>"
+                    
+               }
+           }
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s38","5",param,begin,runIn,success,failed);
+
+        
+    }
+    
+    //存储用户信息到本地
+    function SaveUserInfoIntoNative(){
+        
+        var myna = new Native();
+        
+        var param ={"userinfo":{"userid":"xxxxxxx","account":"xxx","secret":"xxxx","hxuserid":"xxxxxx","hxsecret":"xxxxx","JSSESSIONID":"21278988eiejuee23434dqs8109","token":"s5t7898723dee4edeaedee"}};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content");
+            
+            content.innerHTML="";
+            
+            content.innerHTML =+obj+"<br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s20","5",param,begin,runIn,success,failed);
+    }
+    //获取hmac，返回是字符串
+    function getHmac(){
+      
+      var myna = new Native();
+      
+      var param ={"content":"来自中国内蒙古"};
+      
+      var begin=function(){
+          
+          
+      }
+      
+      var runIn=function(obj){
+          
+          
+          
+      }
+      
+      var success= function(obj){
+          
+          var content= document.getElementById("content5");
+          
+          content.innerHTML="";
+          
+          content.innerHTML ="获取hmac为："+obj+"<br/>";
+          
+      }
+      
+      var failed = function(error,obj){
+          
+          
+      }
+      
+      //1 2 3 4
+      myna.calling("s21","5",param,begin,runIn,success,failed);
+    }
+    //解密
+    function doDecrypt(){
+        
+        if(encrypt_str===""){
+            
+            alert("请先设置加密过的文本，在执行此操作！");
+            
+            return ;
+        }
+        var myna = new Native();
+        
+        var param ={"content":encrypt_str};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("contentx");
+            
+            content.innerHTML="";
+            
+            content.innerHTML ="解密结果："+obj+"<br/>";
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("s22","5",param,begin,runIn,success,failed);
+
+    }
+    //加密，返回字符串
+    function doEncrypt(){
+        
+        var myna = new Native();
+        var input = document.getElementById("inputcontent");
+        var param ={"content":"来自内蒙古"};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            encrypt_str = obj;
+            
+            var content= document.getElementById("content5");
+            content.innerHTML="";
+            content.innerHTML ="加密结果："+obj+"<br/>";
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        //1 2 3 4
+        myna.calling("s23","5",param,begin,runIn,success,failed);
+    }
+    
+    //必须实现的方法--页面初始化
+    function PageReady(){
+     
+        eventlistener.addEventListener("friendaccept");
+        eventlistener.addEventListener("frienddecline");
+        eventlistener.addEventListener("friendRequest");
+        
+    }
+    
+    //必须实现的方法-用于接收通知
+    function SystemNotify(notify){
+        
+        var notify_x= document.getElementById("notify");
+        
+        notify_x.innerHTML="";
+        
+        notify_x.innerHTML="消息内容："+notify+"<br/>";
+        
+    }
+    
+    //清除成功/失败
+    function clearCache(){
+        var myna = new Native();
+        var param = null;
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            var content= document.getElementById("content6");
+            content.innerHTML="";
+            content.innerHTML = "缓存已经清除！！！！";
+        }
+        
+        var failed = function(error,obj){
+            
+        }
+        //1 2 3 4
+        myna.calling("s31","5",param,begin,runIn,success,failed);
+        
+    }
+    
+    function uploadFile(path){
+        
+        var myna = new Native();
+        //path代表路径
+        //logic_type代表逻辑类型，0代表上传的是图片，具体业务需要后台定义
+        //当上传的文件是
+        //width 压缩的宽度
+        //height 压缩的高度
+        
+        var img = new Image();
+        
+        var img = new Image();
+        img.src = path;
+        
+        img.onload=function(){
+            
+            //alert(img.width);
+            //alert(img.height);
+            
+            var ind = path.lastIndexOf(".");
+            
+            var type = path.substring(ind+1,path.length);
+            
+            var param = {"path":path,"logic_type":"0","width":img.width/2,"height":img.height/2};
+            
+            var begin=function(){
+                
+            }
+            
+            var runIn=function(obj){
+                
+                var content = document.getElementById("content6");
+                
+                
+                
+                content.innerHTML+="当前上传进度为:"+obj+"<br/>";
+                
+            }
+            
+            var success= function(obj){
+                var content = document.getElementById("content6");
+                
+                
+                
+                content.innerHTML+="<br/>"+obj+"<br/>";
+                
+            }
+            
+            var failed = function(error,obj){
+                
+                var content = document.getElementById("content6");
+                content.innerHTML+="<br/>"+error+"<br/>";
+                
+                
+            }
+            myna.calling("s32","5",param,begin,runIn,success,failed);
+            
+        }
+        
+        
+        //主要针对普通文件上传，非视频、图片类型，针对普通上传文件，无需提供width和height
+       // myna.calling("s36","5",param,begin,runIn,success,failed);
+    }
+    
+    function doUpload(){
+        
+        uploadFile(img_path);
+        
+    }
+    
+    function doAliPay(){
+        
+            var myna = new Native();
+            /*
+              支付宝支付，
+             key是由服务器提供(见底部重要说明)
+             body是工程师根据业务进行填写
+             subject是工程师根据业务进行填写
+             orderId是服务端生成的
+             amount是金额
+             
+             // 重要说明
+             // 这里只是为了方便直接向商户展示支付宝的整个支付流程；所以Demo中加签过程直接放在客户端完成；
+             // 真实App里，privateKey等数据严禁放在客户端，加签过程务必要放在服务端完成；
+             // 防止商户私密数据泄露，造成不必要的资金损失，及面临各种安全风险；
+             
+             */
+            var param = {"key":"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCR7vT6+btyrgcg5AgrvYc9ahbzt2drzJUjXN2IaKclE/craWJBqvF3ftGEv2dtTbQFHFltb6l03am6YCpJMSrZ3kzHo+X9kltZpd47ihcc50yM/90hpvPVFphOt+CdBDz/HeZxx4bo1dQaR9sBFXgBuRdWrMqA+iTs42Y96b8sOxuYTPen9L+qYOs12GmuyyKCcaQIqkyWwL+YMuqdSZMPxEcUluDNKqHieYonJbsPVXTnNvaC9ex0Ym/S5iHgWLMPrzBLcCdAnveWkMoEoxrOxy0qBN8sPuznAA01GD+TiB1oy7Hmn86cmORxUrFUIA+L8iW1dPtU/BkDdieGft35AgMBAAECggEAdYt4ID/PUIwEieWi/zhmGn29hwmPcDEVX6qJdjp1h1QRnxH/Zs1+ObYYpUhW0p/oBMXU8mUipVN2Rvz2koXb8ikwxw2pTxn4IrmLy4FrJIjaDCh7wYNsm5Lbk2xgq5iiWQuIdtU0QY8ajSCbsr/MLfccaWA8rK7P109DJ1OD/OdVtWcsZN3d50H1U+VnmmE0p9Ah293q+9yxgctNChT0oidCZrYMdJ2XrCJZTrA4vN1i6JMpUXnKoSDRzl+/FqgPW1SXeg/6j/Q/mYfZYhUcwe90ChTCfLjSntm93khXiHlw0L6xCodSdv/Lu6M4W0vLYeyZNKmyrmmu77J4Gc2RkQKBgQDZ0G5KwUYIUuUyN3X/Or8b7rLYEHiGiAQnAwPzeVo0CcQCO3CMADJuMX6MTHi5KoUMiuikGWdCCtWRYskKXYPvJnbFZHjX5AAo2udQiIL6rDSRyY0/jpupZkhFx1fWtxtw9gUyLKFd0ghrUHxUacuGwjurU03C/WRs29g9Iga8ZwKBgQCrhH696ctug88m7z2Pt/ToVIWzBfLtt/M3ExgequEyfTlMIeknJLe9ZE7w0EBhImm2wlnB/REPlHZLXROKb0MmyZABxQp98APHMqd2XyvKIJzIECxzv7lXmeAzofEcLOdNwSCxTYQ+3jkq1tttCuY46qa7FxY/7SbnQTw5+4kWnwKBgQCUZUbfM3JtNVzlq5d+vh16AFRklEQpE/4QPiOw+5qTHZwnESwKlg/Ft37KQ0d0kB15gCIjuxL4kb0TgkQKBdBfXMtKjLswCyx4qTszSO5DrpNaSAEtrhErhn3y3G9h3/qYKWU8299Mtk36Hym1sSZyt15DyUuPb2e+KsHWVJpWPQKBgA/WuG2JPYQDIAoUZbbz4eXiiEYz8m8JYahgVwXd+dXTworJRuKafW076h5K3Ocbam+6GtfTKtQpfZMQEVHjXGwkiOvg6kse8vpeLyC7QSv1PwUqmTBHMDJqv02FUuKrMuD3SLGW2vODSfwuwyyaqQ/we10jkKZum/0XBRzFoa85AoGAcGIA1GZ5/WS2iaKpwayrhrACgcsH2wcbr8cORI5xPH3cnY1dKXhpuGijnHKMWj+ox2Is3UMQIaPEcrNGmN21AsVhGbJSWpQME5xgkmddz7DtNHkQ7x2+jR2HozFNpCJOlf0GDyGf7FWIr8jQkfc5BhnBOgTmfTLkpQ+E1/ppm5k=","body":"xxxx","subject":"xxx","orderId":"10010103030120340201034","amount":"25.00"};
+            
+            var begin=function(){
+                
+                
+            }
+            
+            var runIn=function(obj){
+                
+                
+                
+            }
+            
+            var success= function(obj){
+                
+                var container = document.getElementById("content7");
+                
+                container.innerHTML = "";
+                
+                container.innerHTML += "结果为"+obj+"</br>"
+                
+            }
+            
+            var failed = function(error,obj){
+                
+                
+            }
+            myna.calling("s33","5",param,begin,runIn,success,failed);
+
+
+    }
+    
+    function doWxPay(){
+        
+        var myna = new Native();
+        //partnerid 商户id
+        //preayId 预订单编号
+        //nonceStr 服务器生成
+        
+        var param = {"partnerid":"1091001x","preayId":"333eddeee3edeedee","nonceStr":"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCR7vT6"};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+         
+         
+        }
+        
+        var success= function(obj){
+            
+            var container = document.getElementById("content7");
+            
+            container.innerHTML = "";
+            
+            container.innerHTML += "结果为"+obj+"</br>"
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        myna.calling("s34","5",param,begin,runIn,success,failed);
+
+        
+    }
+    //默认的视频点播
+    function defaultVideoPlay(){
+        
+        var myna = new Native();
+        /*
+         playtype:0 代表普通的播放
+         url代表要点播或者直播的内容
+         */
+        var param = {"playtype":"0","url":"http://player.alicdn.com/video/aliyunmedia.mp4"};
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("p19","1",param,begin,runIn,success,failed);
+        
+        
+    }
+    //默认的视频直播
+    function defaultLivePlay(){
+        
+        var myna = new Native();
+        /*
+         playtype:0 代表普通的播放
+         url代表要点播或者直播的内容
+         */
+        var param = {"playtype":"0","url":"rtmp://live.hkstv.hk.lxdns.com/live/hks"};
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("p19","1",param,begin,runIn,success,failed);
+        
+    }
+    //STS视频直播
+    function STSLivePlay(vid,accessKeyId,accessKeySecret,securityToken){
+        
+        var myna = new Native();
+        
+        /*
+         "vid":视频id
+         "accessKeyId":访问keyId
+         "accessKeySecret":访问秘钥
+         "securityToken": 安全token
+         按照aliyun视频官方文档约定，上述四个参数为必须指定，否则播放器将不配合播放
+         */
+        
+
+        var param = {"playtype":"1",
+            "vid":vid,
+            "accessKeyId":accessKeyId,
+            "accessKeySecret":accessKeySecret,
+            "securityToken":securityToken
+        };
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("p19","1",param,begin,runIn,success,failed);
+    }
+    
+    //STS视频点播
+    function STSVideoPlay(vid,accessKeyId,accessKeySecret,securityToken){
+        
+        var myna = new Native();
+        
+        /*
+         "vid":视频id
+         "accessKeyId":访问keyId
+         "accessKeySecret":访问秘钥
+         "securityToken": 安全token
+         按照aliyun视频官方文档约定，上述四个参数为必须指定，否则播放器将不配合播放
+         
+         */
+        var param =  {"playtype":"1",
+            "vid":"601e013502614279b2ccad7b6719af18",
+            "accessKeyId":"LTAIURqEvhfCynmJ",
+            "accessKeySecret":"rDcXhKLZTuQRpA1xAhoHwX7BuKa5TJ",
+            "securityToken":"CAIS8AF1q6Ft5B2yfSjIr4nhIYvfuLlW3qW9NHHchVBgT/thgqvdhDz2IHxEfXRrCOsZtvwzmWBX7fwclqB6T55OSAmcNZIoSSjnLqHlMeT7oMWQweEuqv/MQBq+aXPS2MvVfJ+KLrf0ceusbFbpjzJ6xaCAGxypQ12iN+/i6/clFKN1ODO1dj1bHtxbCxJ/ocsBTxvrOO2qLwThjxi7biMqmHIl1D0lsP7vmZDGsEGF0ACl8IJP+dSteKrDRtJ3IZJyX+2y2OFLbafb2EZSkUMWpP4r1/0fpm+f4ozNXAILvQ/mKefd/tppKB5p/0/PvzO7J5IagAGEqN+Gvc+RC3KtqVVOoTMoGBvKki+X5vdhOCn/m3R0SOf6iNnvwLA0poNGzcouK5S9tB8DJ8AbA6cllYMmDt9kUS1sKOlyl1H1np37JxrUcS3usZWQvVunQQVeF2hIAcS9gl6YNOZ/7r+C+m+psMHlGq/Kos8B+aKPB3R9FBbag==",
+            "url":"https://outin-e1c2948675c611e888ff00163e1c35d5.oss-cn-shanghai.aliyuncs.com/video/2617a8b2-164879253ea-0005-8cbf-598-747f1.mp4?Expires=1531286682&OSSAccessKeyId=LTAInFumgYEtNMvC&Signature=7A%2BIqQcYwli4ClrQ5p4vRpsYOJs%3D"
+        };
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        
+        //1 2 3 4
+        myna.calling("p19","1",param,begin,runIn,success,failed);
+        
+    }
+    
+    function CallingAliyunVideoRecorder(){
+        
+        var myna = new Native();
+        
+        /* 阿里云短视频播放所需的参数,码率采用阿里默认值，不提供修改功能，以下参数为跟阿里云相关的录制参数
+         @property (nonatomic,assign) CGFloat f;//视频质量 （0 极高，1 高，2 中，3 低，4 较低，5 极低，）
+         @property (nonatomic,assign) CGFloat videoWidth;//视频分辨率 （360，480，540，720）
+         @property (nonatomic,assign) CGFloat videoRatio;//视频屏幕比 （9.0/16.0，3.0/4.0，1.0）==>>>算好后传入，别传 9.0/16.0，3.0/4.0，可以默认传递1.0
+         
+         @property (nonatomic,assign) NSInteger max_time_length; //最大时长 建议不超过300S，默认值30s
+         @property (nonatomic,assign) NSInteger min_time_length; //最小时长 最小时长大于0，默认值2s
+         @property (nonatomic,assign) NSInteger key_frame; //关键帧 建议1-300，默认5
+
+         */
+        
+        var param ={
+            "f":"5",
+            "videoWidth":"540",
+            "videoRatio":"1.0",
+            "max_time_length":"30",
+            "min_time_length":"10",
+            "key_frame":"5"
+        };
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            var content= document.getElementById("content4");
+            content.innerHTML="";
+            
+            if(obj.indexOf(".png")!=-1){
+                img_path = obj;
+                content.innerHTML ="<img src='"+obj+"'/>";
+            }
+            if(obj.indexOf(".mp4")!=-1){
+                content.innerHTML ="<video src='"+obj+"' controls='controls'>您的浏览器不支持 video 标签。</video>"
+            }
+        }
+        
+        var failed = function(error,obj){
+            
+            
+        }
+        myna.calling("s37","5",param,begin,runIn,success,failed);
+    }
+    
+    </script>
+</HEAD>
+<body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="scancontent">
+        
+    </div>
+    <input type="button" onclick="callingService()" value="调用服务">
+    <input type="button" onclick="push()" value="推入调用">
+    <input type="button" onclick="scan()" value="扫描二维码">
+    <input type="button" onclick="back()" value="返回">
+    <input type="button" onclick="broadCastMessage()" value="发广播消息">
+    <input type="button" onclick="openApp()" value="打开app">
+    <input type="button" onclick="SaveUserInfoIntoNative()" value="登录成功后保存用户信息到本地">
+    <input type="button" onclick="openNewWebViewWithSpecifiUrl()" value="按指定网址打开新页面">
+        <br>
+    <input type="button" onclick="loginHuanxin()" value="执行环信登陆">
+    <input type="button" onclick="exitHuanxin()" value="执行环信退出">
+    <input type="button" onclick="savelocalStorage()" value="保存到localStorage">
+    <input type="button" onclick="getlocalStorage()" value="获取localStorage">
+       
+    <input type="button" onclick="clearCertainlocalStorage()" value="清除某一个localStorage">
+        
+    <br/>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <input type="button" onclick="insertValue()" value="存入值">
+    <input type="button" onclick="updateValue()" value="修改值">
+    <input type="button" onclick="deleteValue()" value="删除值">
+    <input type="button" onclick="querySingleValue()" value="查询单独对象">
+    <input type="button" onclick="queryAllValue()" value="查询所有对象">
+        
+    <div id="content">
+            
+    </div>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+     <input type="button" onclick="getCurrentLocation()" value="获取定位">
+         
+    <div id="content1">
+             
+    </div>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input type="button" onclick="addFriend()" value="添加好友">
+    <input type="button" onclick="agreeAddAsFriend()" value="同意添加好友"/>
+    <input type="button" onclick="declineAddAsFriend()" value="拒绝好友"/>
+    <input type="button" onclick="callingIm()" value="调起环信聊天">
+    <input type="button" onclick="getFriendList()" value="获取好友列表">
+    <div id="content2">
+        
+    </div>
+    <div id='notify'>
+        
+    </div>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input type="button" onclick="fetchOsVersion();" value="获取操作系统版本">
+    <input type="button" onclick="fetchOs();" value="获取操作系统">
+    <input type="button" onclick="iphoneType();" value="获取设备类型">
+    <input type="button" onclick="getCarrierName();" value="获取运营商">
+    <input type="button" onclick="getResolution();" value="获取分辨率">
+    <input type="button" onclick="getNetType();" value="获取网络类型">
+    <input type="button" onclick="getNetworkType();" value="是wifi还是客户流量">
+    <input type="button" onclick="deviceGuid();" value="设备标识">
+    <br/>
+    <div id="content3">
+            
+     </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <input type='button' id ='photo' onclick="CallingCamera(['1','2'],'1')" value='调用摄像头进行录像,拍照'/>
+    <input type='button' id ='photo' onclick="CallingCamera(['1'],'1')" value='调用摄像头进行录像'/>
+    <input type='button' id ='photo' onclick="CallingCamera(['2'],'')"  value='调用摄像头进行拍照'/>
+    <input type='button' id ='photo' onclick='CallingAlbum()' value='调用相册'/>
+    <input type='button' id='photo' onclick='MultiPictureSelect()' value='多图选择'/>
+    <input type='button' id='aliyunvideo' onclick='CallingAliyunVideoRecorder()' value='调用aliyun摄像'/>
+    
+    <div id='content4'>
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+ 
+    <input type='button' id ='decrypt' onclick='getHmac()' value='获取hmac'/>
+    <input type='button' id ='encrypt' onclick='doEncrypt()' value='调用文本加密'/>
+    <input type='button' id ='decrypt' onclick='doDecrypt()' value='调用文本解密'/>
+   
+    <div id='content5'>
+        
+    </div>
+    <div id='contentx'></div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input type='button' id ='clearCache' onclick='clearCache();' value='清除webview缓存'/>
+    
+    <input type='file' id ='uploadfile' onclick='doUpload();' value='执行文件上传'/>
+    <div id='content6'>
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input type="button" id="doAliPay" onclick='doAliPay()' value='调起支付宝支付'/>
+    <input type="button" id="doWxPay" onclick='doWxPay()' value='调起微信支付'/>
+    <div id='content7'>
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <input type="button" id="" onclick='defaultVideoPlay()' value='调起默认视频点播'/>
+    <input type="button" id="" onclick='defaultLivePlay()' value='调起默认视频直播'/>
+    
+    <input type="button" id="" onclick='STSVideoPlay()' value='调起STS视频点播'/>
+    <input type="button" id="" onclick='STSLivePlay()' value='调起STS视频直播'/>
+    <div id='content8'>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</body>
+</HTML>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE></TITLE>
+    <script type="text/javascript" src="md5.min.js"></script>
+    <script type="text/javascript" src="command.js"></script>
+    <script type="text/javascript" src="Base64.js"></script>
+    <script type="text/javascript" src="native.js"></script>
+    <script type="text/javascript">
+        
+        function ShowMap(){
+            
+                var myna = new Native();
+                
+                var param = null;
+                
+                var begin=function(){
+                    
+                    
+                }
+                
+                var runIn=function(obj){
+                    
+                    
+                    
+                }
+                
+                var success= function(obj){
+                    
+                    
+                }
+                
+                var failed = function(error,obj){
+                    
+                }
+                myna.calling("p12","1",param,begin,runIn,success,failed);
+            
+        }
+    
+    function ShowMapWithBlueAnnotation(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+        }
+        
+        myna.calling("p13","1",param,begin,runIn,success,failed);
+        
+    }
+    
+    function ShowMapWithInnerMap(){
+        
+        var myna = new Native();
+        
+        var param = null;
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+        }
+        
+        myna.calling("p14","1",param,begin,runIn,success,failed);
+        
+    }
+    
+    function ShowMapWithType(type){
+        
+        var myna = new Native();
+        
+        var param = {navitype:type};
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+        }
+        myna.calling("p15","1",param,begin,runIn,success,failed);
+        
+    }
+    
+    
+    function ShowMapWithAnnotationPanel(){
+        
+        var myna = new Native();
+        
+        var param = {annotations:[{lat:"39.989631",lon:"116.481018",title:"方恒国际",subtitle:"阜通东大街6号",tel:"13811830249",img:"",viewType:"0"}]}
+        
+        var begin=function(){
+            
+            
+        }
+        
+        var runIn=function(obj){
+            
+            
+            
+        }
+        
+        var success= function(obj){
+            
+            
+        }
+        
+        var failed = function(error,obj){
+            
+        }
+        
+        myna.calling("p16","1",param,begin,runIn,success,failed);
+        
+    }
+    </script>
+</HEAD>
+<body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="scancontent">
+        
+    </div>
+    <input type="button" onclick="ShowMap()" value="标准地图">
+    <input type="button" onclick="ShowMapWithBlueAnnotation()" value="调起地图并显示定位蓝点">
+    <input type="button" onclick="ShowMapWithInnerMap()" value="调起地图并显示建筑物内地图">
+    <input type="button" onclick="ShowMapWithType(1)" value="卫星地图">
+    <input type="button" onclick="ShowMapWithType(2)" value="夜景模式地图">
+    <input type="button" onclick="ShowMapWithType(3)" value="导航地图">
+    <input type="button" onclick="ShowMapWithAnnotationPanel()" value="定位标点显示">
+    <div id="content">
+            
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div id="content">
+            
+    </div>
+    
+    
+</body>
+</HTML>

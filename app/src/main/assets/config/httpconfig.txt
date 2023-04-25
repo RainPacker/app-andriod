@@ -1,0 +1,55 @@
+{
+    "prefix":"http://10.1.20.102:8083",
+    "requests": [{
+                 "reqid": "r001",
+                 "requrl": "/npost",
+                 "method": "POST",
+                 "reqtype":"normal",
+                 "fileaction":"",
+                 "cache": ""
+                 }, {
+                 "reqid": "r002",
+                 "requrl": "/nget",
+                 "method": "GET",
+                 "reqtype":"normal",
+                 "fileaction":"",
+                 "cache": ""
+                 }, {
+                 "reqid": "r004",
+                 "requrl": "/jsonpost",
+                 "method": "POST",
+                 "reqtype":"json",
+                 "fileaction":"",
+                 "cache": ""},
+                 {
+                 "reqid": "r005",
+                 "requrl": "/localUpload",
+                 "method": "POST",
+                 "reqtype":"json",
+                 "fileaction":"",
+                 "cache": ""},
+                {
+                "reqid": "r006",
+                "requrl": "/appstart",
+                "method": "POST",
+                "reqtype":"json",
+                "fileaction":"",
+                "cache": ""
+                },{
+                "reqid": "r007",
+                "requrl": "/login",
+                "method": "POST",
+                "reqtype":"json",
+                "fileaction":"",
+                "cache": ""
+                },{
+                "reqid": "r008",
+                "requrl": "/updateAppFile",
+                "method": "POST",
+                "reqtype":"json",
+                "fileaction":"",
+                "cache": ""
+                }
+
+           ]
+}
