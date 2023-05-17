@@ -10,11 +10,8 @@ buildscript {
             url "http://mvn.mob.com/android"
         }
         mavenCentral()
+        maven{ url'https://maven.aliyun.com/repository/google'}
         google()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.3'
@@ -32,17 +29,18 @@ allprojects {
             url 'http://maven.aliyun.com/nexus/content/groups/public'
         }
         jcenter()
-        maven {
+      /*  maven {
             url "https://raw.githubusercontent.com/HyphenateInc/Hyphenate-SDK-Android/master/repository"
-        }
+        }*/
         flatDir {
             dirs 'libs'
             dirs project(':AVMP_SkinLibrary').file('libs')
         }
-        maven {
+        google()
+      /*  maven {
             url 'https://maven.google.com/'
             name 'Google'
-        }
+        }*/
     }
 }
 

@@ -27,7 +27,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':base')
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+//    compile 'com.google.android.gms:play-services-gcm:9.4.0'
     compile 'com.hyphenate:hyphenate-sdk:3.4.0'
     compile 'com.parse:parse-android:1.13.1'
     compile 'org.greenrobot:eventbus:3.1.1'
